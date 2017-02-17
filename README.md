@@ -38,8 +38,9 @@ $ sbt
 > exit
 $ cd target/sbt-test/default-*/scripted
 $ sbt package
-$ Test the jar using Spark Job Server
 ```
+
+- Test the jar using Spark Job Server
 
 - If you like your new template, push it to GitHub.
 
