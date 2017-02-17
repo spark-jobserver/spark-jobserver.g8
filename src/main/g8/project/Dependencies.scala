@@ -19,8 +19,8 @@ object Dependencies {
   )
 
   lazy val jobserverDeps = Seq(
-    "spark.jobserver" %% "job-server-api" % jobServer % "provided",
-    "spark.jobserver" %% "job-server-extras" % jobServer % "provided"
+    "com.github.spark-jobserver.spark-jobserver" % "job-server-api_2.11" % jobServer % "provided",
+    "com.github.spark-jobserver.spark-jobserver" % "job-server-extras_2.11" % jobServer % "provided"
   )
 
   // This is needed or else some dependency will resolve to 1.3.1 which is in jdk-8
@@ -30,6 +30,7 @@ object Dependencies {
 
   val repos = Seq(
     "sonatype-releases" at "https://oss.sonatype.org/content/repositories/releases/",
-    "Job Server Bintray" at "https://dl.bintray.com/spark-jobserver/maven"
+    "Job Server Bintray" at "https://dl.bintray.com/spark-jobserver/maven",
+    "jitpack" at "https://jitpack.io"
   )
 }
