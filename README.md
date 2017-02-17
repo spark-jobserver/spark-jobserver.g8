@@ -1,6 +1,6 @@
 # Spark Jobserver sbt project #
 
-[![Build Status](https://secure.travis-ci.org/noorul/spark-jobserver.g8.png)](http://travis-ci.org/noorul/spark-jobserver.g8)
+[![Build Status](https://secure.travis-ci.org/spark-jobserver/spark-jobserver.g8.png)](http://travis-ci.org/spark-jobserver/spark-jobserver.g8)
 
 
 [g8](httphttps://github.com/foundweekends/giter8) template to get a Spark Jobserver application up and running quickly.
@@ -11,7 +11,7 @@
 - Get the g8 template and run it:
 
 ```sh
-$ sbt new noorul/spark-jobserver.g8
+$ sbt new spark-jobserver/spark-jobserver.g8
 $ cd <name-of-app>
 $ sbt package
 ```
@@ -21,7 +21,7 @@ $ sbt package
 ## Modify this template ##
 
 - [Install sbt](http://www.scala-sbt.org/), version 0.13.0 or higher.
-- Fork [noorul/spark-jobserver.g8](https://github.com/noorul/spark-jobserver.g8) on GitHub to your account.
+- Fork [spark-jobserver/spark-jobserver.g8](https://github.com/spark-jobserver/spark-jobserver.g8) on GitHub to your account.
 Let's assume your account is "foo".
 - Clone it.
 
