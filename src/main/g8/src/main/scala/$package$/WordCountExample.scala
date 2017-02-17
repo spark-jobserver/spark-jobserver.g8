@@ -7,6 +7,7 @@ import org.scalactic._
 import scala.util.Try
 
 import spark.jobserver.api.{SparkJob => NewSparkJob, _}
+import spark.jobserver.{SparkJob, SparkJobInvalid, SparkJobValid, SparkJobValidation}
 
 /**
  * A super-simple Spark job example that implements the SparkJob trait and can be submitted to the job server.
