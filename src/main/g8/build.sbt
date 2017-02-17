@@ -33,7 +33,6 @@ lazy val root = (project in file("."))
     commonSettings,
     rootSettings,
     name := "$name$",
-    description := "$description$",
     libraryDependencies ++= sparkDeps ++ typeSafeConfigDeps ++ sparkExtraDeps ++ coreTestDeps
       ++ jobserverDeps,
     test in assembly := {},
