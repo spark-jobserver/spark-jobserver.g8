@@ -3,9 +3,9 @@ import Versions._
 
 
 lazy val commonSettings: Seq[Def.Setting[_]] = Defaults.coreDefaultSettings ++ Seq(
-  organization := "$organization",
+  organization := "$organization$",
   version := "$version$",
-  scalaVersion := "$scalaversion$",
+  scalaVersion := "$scala_version$",
   resolvers ++= Dependencies.repos,
   credentials += Credentials(Path.userHome / ".sbt" / ".credentials"),
   dependencyOverrides += "org.scala-lang" % "scala-library" % scalaVersion.value,
@@ -33,7 +33,6 @@ lazy val root = (project in file("."))
     commonSettings,
     rootSettings,
     name := "$name$",
-    description := "$description$",
     libraryDependencies ++= sparkDeps ++ typeSafeConfigDeps ++ sparkExtraDeps ++ coreTestDeps
       ++ jobserverDeps,
     test in assembly := {},
