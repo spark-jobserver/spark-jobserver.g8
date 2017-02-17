@@ -19,8 +19,8 @@ object Dependencies {
   )
 
   lazy val jobserverDeps = Seq(
-    "com.github.spark-jobserver.spark-jobserver" % "job-server-api_2.11" % jobServer % "provided",
-    "com.github.spark-jobserver.spark-jobserver" % "job-server-extras_2.11" % jobServer % "provided"
+    "com.github.spark-jobserver.spark-jobserver" % "job-server-api_2.10" % jobServer % "provided",
+    "com.github.spark-jobserver.spark-jobserver" % "job-server-extras_2.10" % jobServer % "provided"
   )
 
   // This is needed or else some dependency will resolve to 1.3.1 which is in jdk-8
